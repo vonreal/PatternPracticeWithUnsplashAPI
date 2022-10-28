@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mvButtonClicked(_ sender: UIButton) {
-        let storyBoard = UIStoryboard(name: "MVMain", bundle: nil)
-        guard let viewCon = storyBoard.instantiateViewController(withIdentifier: "MVMainViewController") as? MVMainViewController else { return }
+        let storyBoard = UIStoryboard(name: "VCMain", bundle: nil)
+        guard let viewCon = storyBoard.instantiateViewController(withIdentifier: "VCMainViewController") as? VCMainViewController else { return }
         self.navigationController?.pushViewController(viewCon, animated: true)
     }
     

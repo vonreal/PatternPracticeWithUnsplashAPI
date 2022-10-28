@@ -26,7 +26,7 @@
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="MV"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VC"/>
                                         <connections>
                                             <action selector="mvButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQY-N4-oVP"/>
                                         </connections>

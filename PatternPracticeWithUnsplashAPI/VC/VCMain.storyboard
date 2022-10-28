@@ -11,30 +11,29 @@
         <!--Main View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="MVMainViewController" id="Y6W-OH-hqX" customClass="MVMainViewController" customModule="PatternPracticeWithUnsplashAPI" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VCMainViewController" id="Y6W-OH-hqX" customClass="VCMainViewController" customModule="PatternPracticeWithUnsplashAPI" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dgL-EK-m8Y">
-                                <rect key="frame" x="50" y="251" width="314" height="394"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAk-AX-tGj">
+                                <rect key="frame" x="50" y="256" width="314" height="384"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Sz-ek-p0q">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-Yw-wAE">
                                         <rect key="frame" x="0.0" y="0.0" width="314" height="314"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="500" id="PLO-fM-LBO"/>
-                                            <constraint firstAttribute="width" secondItem="0Sz-ek-p0q" secondAttribute="height" multiplier="1:1" id="UhE-Rs-WYI"/>
+                                            <constraint firstAttribute="width" secondItem="aWx-Yw-wAE" secondAttribute="height" multiplier="1:1" id="l5n-kE-YbS"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SXa-W5-4T9">
-                                        <rect key="frame" x="0.0" y="344" width="314" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaT-nv-n3m">
+                                        <rect key="frame" x="0.0" y="334" width="314" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="mY1-Gm-8M3"/>
+                                            <constraint firstAttribute="height" constant="50" id="SqL-vW-3pG"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                         <connections>
-                                            <action selector="updateButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QPH-fX-2gy"/>
+                                            <action selector="updateButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ija-ur-tsg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -43,15 +42,15 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dgL-EK-m8Y" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="4IE-gw-hMP"/>
-                            <constraint firstItem="dgL-EK-m8Y" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="VUk-fH-0Jd"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dgL-EK-m8Y" secondAttribute="trailing" constant="50" id="Vwe-GR-JIa"/>
-                            <constraint firstItem="dgL-EK-m8Y" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ooL-xK-6fn"/>
+                            <constraint firstItem="xAk-AX-tGj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="4W9-nf-Q1v"/>
+                            <constraint firstItem="xAk-AX-tGj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="TdH-UT-iqG"/>
+                            <constraint firstItem="xAk-AX-tGj" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="f5X-TS-gAP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xAk-AX-tGj" secondAttribute="trailing" constant="50" id="sl7-cC-9ma"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="photoImageView" destination="0Sz-ek-p0q" id="z9S-UE-IXu"/>
-                        <outlet property="updateButton" destination="SXa-W5-4T9" id="MFg-03-MjH"/>
+                        <outlet property="photoImageView" destination="aWx-Yw-wAE" id="IGC-us-KKe"/>
+                        <outlet property="updateButton" destination="BaT-nv-n3m" id="Efe-tK-YL8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
