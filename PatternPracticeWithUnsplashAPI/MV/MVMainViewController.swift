@@ -27,6 +27,12 @@ class MVMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 3. 비즈니스 로직
+        //  3-1. Unsplash API 요청하기
+        //  3-2. API로 받아온 데이터 담을 구조 만들기
+        //  3-3. 구조에 담기
+        //  3-4. 데이터 뷰에 업데이트해주기
+        //  3-5. 액션 처리하기
     }
     
     // 2. Button Action 연결

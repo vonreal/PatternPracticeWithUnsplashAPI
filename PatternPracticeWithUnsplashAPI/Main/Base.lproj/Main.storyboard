@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="u6v-Ua-avI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -27,6 +27,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="MV"/>
+                                        <connections>
+                                            <action selector="mvButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QQY-N4-oVP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqA-Hg-7zJ">
                                         <rect key="frame" x="0.0" y="80" width="354" height="50"/>
@@ -34,6 +37,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="MVC"/>
+                                        <connections>
+                                            <action selector="mvcButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ghV-VD-qPi"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ter-Af-NKF">
                                         <rect key="frame" x="0.0" y="160" width="354" height="50"/>
@@ -41,6 +47,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="MVVM"/>
+                                        <connections>
+                                            <action selector="mvvmButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k5T-i5-Wah"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IMo-C1-KKJ">
                                         <rect key="frame" x="0.0" y="240" width="354" height="50"/>
@@ -48,6 +57,9 @@
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="MVVM+RxSwift"/>
+                                        <connections>
+                                            <action selector="mvvmRxswiftButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vdi-MA-d75"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -69,14 +81,27 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="K5L-ve-acz" secondAttribute="trailing" constant="30" id="vGh-1t-5Lb"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="mvButton" destination="3lD-kW-rwY" id="9P0-pR-bcu"/>
-                        <outlet property="mvcButton" destination="wqA-Hg-7zJ" id="PeW-i9-r63"/>
-                        <outlet property="mvvmButton" destination="ter-Af-NKF" id="r8o-3a-gNm"/>
-                        <outlet property="mvvmRxSwiftButton" destination="IMo-C1-KKJ" id="Eci-CF-btD"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="iWg-s5-gHI"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="886.95652173913049" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zLW-sq-ERJ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="u6v-Ua-avI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CoI-4c-83X">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vXz-nc-JzO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGM-1x-4Ex" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-23.188405797101453" y="83.705357142857139"/>
         </scene>
