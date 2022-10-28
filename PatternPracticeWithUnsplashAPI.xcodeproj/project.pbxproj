@@ -149,6 +149,8 @@
 			dependencies = (
 			);
 			name = PatternPracticeWithUnsplashAPI;
+			packageProductDependencies = (
+			);
 			productName = PatternPracticeWithUnsplashAPI;
 			productReference = 76FC1D49290AD42B00DD8E94 /* PatternPracticeWithUnsplashAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +179,8 @@
 				Base,
 			);
 			mainGroup = 76FC1D40290AD42B00DD8E94;
+			packageReferences = (
+			);
 			productRefGroup = 76FC1D4A290AD42B00DD8E94 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";

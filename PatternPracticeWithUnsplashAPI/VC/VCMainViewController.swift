@@ -44,9 +44,8 @@ class VCMainViewController: BaseViewController {
     }
     
     func setPhotoImageView() {
-        photoImageView.image = UIImage(systemName: "photo")
-        photoImageView.contentMode = .scaleAspectFit
-        photoImageView.tintColor = .lightGray
+        photoImageView.contentMode = .scaleAspectFill
+        photoImageView.backgroundColor = .lightGray
     }
     
     func setUpdateButton() {
@@ -55,21 +54,31 @@ class VCMainViewController: BaseViewController {
         updateButton.tintColor = .white
     }
     
+    // MARK: - 에러처리, 문서보고 좀 더 공부하기 작동만 확인!! 디테일 필요!!
     //  4-1. Unsplash API 요청하기
     func requestRandomImageInUnsplash() {
         let url = URL(string: "https://api.unsplash.com/photos/random/?client_id=\(APIKey.unsplashAccessKey)&count=1")!
+        
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
-            
-            guard let data = data else {
-                print("data error")
+            guard let data = data else { print("data error"); return }
+            guard let httpResponse = response as? HTTPURLResponse,
+                (200...299).contains(httpResponse.statusCode) else {
+                print("response error")
                 return
             }
-
             do {
-                let result = try? JSONDecoder().decode(SearchResult.self, from: data)
-                print("SUCCESS")
-                print(data)
-                dump(result?.urls)
+                let result = try? JSONDecoder().decode([RandomImage].self, from: data)
+                let thumbURL = URL(string: result?[0].urls.regular ?? "")!
+                
+                let imageTask = URLSession.shared.dataTask(with: thumbURL) { data, response, error in
+                    guard let data = data else { print("thumb data error"); return }
+
+                    let image = UIImage(data: data)
+                    DispatchQueue.main.async {
+                        self.photoImageView.image = image
+                    }
+                }
+                imageTask.resume()
             } catch {
                 print(error)
             }
@@ -79,5 +88,6 @@ class VCMainViewController: BaseViewController {
     
     // 2. Button Action 연결
     @IBAction func updateButtonClicked(_ sender: UIButton) {
+        requestRandomImageInUnsplash()
     }
 }
