@@ -56,14 +56,15 @@
 		76FC1D4B290AD42B00DD8E94 /* PatternPracticeWithUnsplashAPI */ = {
 			isa = PBXGroup;
 			children = (
-				76FC1D60290AD43300DD8E94 /* MV */,
-				76FC1D61290ADBEC00DD8E94 /* MVC */,
-				76FC1D62290ADC0400DD8E94 /* MVVM */,
+				76FC1D5A290AD42C00DD8E94 /* Info.plist */,
 				76FC1D4C290AD42B00DD8E94 /* AppDelegate.swift */,
 				76FC1D4E290AD42B00DD8E94 /* SceneDelegate.swift */,
 				76FC1D55290AD42C00DD8E94 /* Assets.xcassets */,
 				76FC1D57290AD42C00DD8E94 /* LaunchScreen.storyboard */,
-				76FC1D5A290AD42C00DD8E94 /* Info.plist */,
+				76FC1D60290AD43300DD8E94 /* MV */,
+				76FC1D61290ADBEC00DD8E94 /* MVC */,
+				76FC1D62290ADC0400DD8E94 /* MVVM */,
+				76FC1D63290BE8C200DD8E94 /* MVVM+RxSwift */,
 			);
 			path = PatternPracticeWithUnsplashAPI;
 			sourceTree = "<group>";
@@ -89,6 +90,13 @@
 			children = (
 			);
 			path = MVVM;
+			sourceTree = "<group>";
+		};
+		76FC1D63290BE8C200DD8E94 /* MVVM+RxSwift */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "MVVM+RxSwift";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
