@@ -57,7 +57,24 @@ class VCMainViewController: BaseViewController {
     
     //  4-1. Unsplash API 요청하기
     func requestRandomImageInUnsplash() {
-        
+        let url = URL(string: "https://api.unsplash.com/photos/random/?client_id=\(APIKey.unsplashAccessKey)&count=1")!
+        let task = URLSession.shared.dataTask(with: url) { data, response, error in
+            
+            guard let data = data else {
+                print("data error")
+                return
+            }
+
+            do {
+                let result = try? JSONDecoder().decode(SearchResult.self, from: data)
+                print("SUCCESS")
+                print(data)
+                dump(result?.urls)
+            } catch {
+                print(error)
+            }
+        }
+        task.resume()
     }
     
     // 2. Button Action 연결
