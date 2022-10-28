@@ -33,6 +33,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain"/>
+                                        <connections>
+                                            <action selector="updateButtonClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QPH-fX-2gy"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -46,6 +49,10 @@
                             <constraint firstItem="dgL-EK-m8Y" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="ooL-xK-6fn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="photoImageView" destination="0Sz-ek-p0q" id="z9S-UE-IXu"/>
+                        <outlet property="updateButton" destination="SXa-W5-4T9" id="MFg-03-MjH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
