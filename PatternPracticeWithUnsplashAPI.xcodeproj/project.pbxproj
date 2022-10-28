@@ -15,6 +15,7 @@
 		76FC1D59290AD42C00DD8E94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FC1D57290AD42C00DD8E94 /* LaunchScreen.storyboard */; };
 		76FC1D65290BEB8400DD8E94 /* MVMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D64290BEB8400DD8E94 /* MVMainViewController.swift */; };
 		76FC1D68290BECFD00DD8E94 /* MVMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76FC1D67290BECFD00DD8E94 /* MVMain.storyboard */; };
+		76FC1D6B290BFD4C00DD8E94 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D6A290BFD4C00DD8E94 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		76FC1D5A290AD42C00DD8E94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76FC1D64290BEB8400DD8E94 /* MVMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVMainViewController.swift; sourceTree = "<group>"; };
 		76FC1D67290BECFD00DD8E94 /* MVMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVMain.storyboard; sourceTree = "<group>"; };
+		76FC1D6A290BFD4C00DD8E94 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				76FC1D4C290AD42B00DD8E94 /* AppDelegate.swift */,
 				76FC1D4E290AD42B00DD8E94 /* SceneDelegate.swift */,
 				76FC1D55290AD42C00DD8E94 /* Assets.xcassets */,
+				76FC1D69290BFD3D00DD8E94 /* Common */,
 				76FC1D57290AD42C00DD8E94 /* LaunchScreen.storyboard */,
 				76FC1D66290BEBAE00DD8E94 /* Main */,
 				76FC1D60290AD43300DD8E94 /* MV */,
@@ -111,6 +114,14 @@
 				76FC1D52290AD42B00DD8E94 /* Main.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		76FC1D69290BFD3D00DD8E94 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1D6A290BFD4C00DD8E94 /* BaseViewController.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76FC1D6B290BFD4C00DD8E94 /* BaseViewController.swift in Sources */,
 				76FC1D65290BEB8400DD8E94 /* MVMainViewController.swift in Sources */,
 				76FC1D51290AD42B00DD8E94 /* ViewController.swift in Sources */,
 				76FC1D4D290AD42B00DD8E94 /* AppDelegate.swift in Sources */,
