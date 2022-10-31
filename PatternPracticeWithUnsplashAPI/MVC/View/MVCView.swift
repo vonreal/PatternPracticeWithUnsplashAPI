@@ -32,8 +32,6 @@ final class MVCView: BaseView {
     override func setConfigure() {
         super.setConfigure()
         
-        self.backgroundColor = .white
-        
         // StackView
         [imageView, updateButton].forEach {
             stackView.addArrangedSubview($0)
