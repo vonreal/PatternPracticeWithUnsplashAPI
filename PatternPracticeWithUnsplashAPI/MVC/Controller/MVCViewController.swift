@@ -19,7 +19,8 @@ class MVCViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        updateImage()
     }
     
     // MARK: - Set Action and selectors
@@ -31,6 +32,11 @@ class MVCViewController: BaseViewController {
     
     @objc
     private func updateButtonClicked() {
+        updateImage()
+    }
+    
+    // MARK: - functions
+    private func updateImage() {
         let url = APIManager.getUnsplashURL()!
         APIManager.request(url: url) { result, error in
             let imageURLString = result?[0].urls.small

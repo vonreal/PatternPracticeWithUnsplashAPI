@@ -8,6 +8,7 @@
 import UIKit
 
 enum APIError: Error {
+    case invalidURL
     case invalidResponse
     case noData
     case failedRequest
@@ -30,7 +31,6 @@ struct APIManager {
             URLQueryItem(name: "client_id", value: APIKey.unsplashAccessKey),
             URLQueryItem(name: "count", value: "1")
         ]
-        
         
         guard let unsplashURL = component.url else { return nil }
         return unsplashURL
@@ -72,6 +72,4 @@ struct APIManager {
         }
         task.resume()
     }
-    
-    
 }
