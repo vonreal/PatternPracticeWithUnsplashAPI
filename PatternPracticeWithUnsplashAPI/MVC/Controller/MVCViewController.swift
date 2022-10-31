@@ -7,9 +7,9 @@
 
 import UIKit
 
-class MVCViewController: BaseViewController {
+final class MVCViewController: BaseViewController {
 
-    let mainView = MVCView()
+    private let mainView = MVCView()
 
     override func loadView() {
         super.loadView()
