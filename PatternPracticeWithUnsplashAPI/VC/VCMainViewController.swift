@@ -17,7 +17,7 @@
 
 import UIKit
 
-class VCMainViewController: BaseViewController {
+final class VCMainViewController: BaseViewController {
 
     // 1. Outlet 연결
     @IBOutlet weak var photoImageView: UIImageView!
@@ -38,25 +38,22 @@ class VCMainViewController: BaseViewController {
         //  4-5. 액션 처리하기
     }
     
-    func setUIConfigAndDesign() {
+    private func setUIConfigAndDesign() {
         setPhotoImageView()
         setUpdateButton()
     }
     
-    func setPhotoImageView() {
-        photoImageView.contentMode = .scaleAspectFill
-        photoImageView.backgroundColor = .lightGray
+    private func setPhotoImageView() {
+        photoImageView.designDefaultImageView()
     }
     
-    func setUpdateButton() {
-        updateButton.setTitle("업데이트", for: .normal)
-        updateButton.backgroundColor = .black
-        updateButton.tintColor = .white
+    private func setUpdateButton() {
+        updateButton.designDefaultButton(title: AppStrings.update)
     }
     
     // MARK: - 에러처리, 문서보고 좀 더 공부하기 작동만 확인!! 디테일 필요!!
     //  4-1. Unsplash API 요청하기
-    func requestRandomImageInUnsplash() {
+    private func requestRandomImageInUnsplash() {
         let url = URL(string: "https://api.unsplash.com/photos/random/?client_id=\(APIKey.unsplashAccessKey)&count=1")!
         
         let task = URLSession.shared.dataTask(with: url) { data, response, error in
@@ -66,22 +63,18 @@ class VCMainViewController: BaseViewController {
                 print("response error")
                 return
             }
-            do {
-                let result = try? JSONDecoder().decode([RandomImage].self, from: data)
-                let thumbURL = URL(string: result?[0].urls.regular ?? "")!
-                
-                let imageTask = URLSession.shared.dataTask(with: thumbURL) { data, response, error in
-                    guard let data = data else { print("thumb data error"); return }
+            let result = try? JSONDecoder().decode([RandomImage].self, from: data)
+            let thumbURL = URL(string: result?[0].urls.regular ?? "")!
+            
+            let imageTask = URLSession.shared.dataTask(with: thumbURL) { data, response, error in
+                guard let data = data else { print("thumb data error"); return }
 
-                    let image = UIImage(data: data)
-                    DispatchQueue.main.async {
-                        self.photoImageView.image = image
-                    }
+                let image = UIImage(data: data)
+                DispatchQueue.main.async {
+                    self.photoImageView.image = image
                 }
-                imageTask.resume()
-            } catch {
-                print(error)
             }
+            imageTask.resume()
         }
         task.resume()
     }

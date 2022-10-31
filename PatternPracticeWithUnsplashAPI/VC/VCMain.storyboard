@@ -17,16 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xAk-AX-tGj">
-                                <rect key="frame" x="50" y="256" width="314" height="384"/>
+                                <rect key="frame" x="52" y="258" width="310.5" height="380.5"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-Yw-wAE">
-                                        <rect key="frame" x="0.0" y="0.0" width="314" height="314"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="310.5" height="310.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="aWx-Yw-wAE" secondAttribute="height" multiplier="1:1" id="l5n-kE-YbS"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BaT-nv-n3m">
-                                        <rect key="frame" x="0.0" y="334" width="314" height="50"/>
+                                        <rect key="frame" x="0.0" y="330.5" width="310.5" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="SqL-vW-3pG"/>
                                         </constraints>
@@ -42,10 +42,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="xAk-AX-tGj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="50" id="4W9-nf-Q1v"/>
+                            <constraint firstItem="xAk-AX-tGj" firstAttribute="width" secondItem="5EZ-qb-Rvc" secondAttribute="width" multiplier="0.75" id="1cH-2q-7qb"/>
                             <constraint firstItem="xAk-AX-tGj" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="TdH-UT-iqG"/>
                             <constraint firstItem="xAk-AX-tGj" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="f5X-TS-gAP"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xAk-AX-tGj" secondAttribute="trailing" constant="50" id="sl7-cC-9ma"/>
                         </constraints>
                     </view>
                     <connections>

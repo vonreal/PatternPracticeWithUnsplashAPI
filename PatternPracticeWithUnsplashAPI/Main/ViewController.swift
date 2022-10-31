@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+final class ViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     }
     
     @IBAction func mvcButtonClicked(_ sender: UIButton) {
+        let viewController = MVCViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func mvvmButtonClicked(_ sender: UIButton) {
