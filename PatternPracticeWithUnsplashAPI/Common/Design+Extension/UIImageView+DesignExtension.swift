@@ -11,5 +11,6 @@ extension UIImageView {
     func designDefaultImageView() {
         self.contentMode = .scaleAspectFill
         self.backgroundColor = .lightGray
+        self.clipsToBounds = true
     }
 }

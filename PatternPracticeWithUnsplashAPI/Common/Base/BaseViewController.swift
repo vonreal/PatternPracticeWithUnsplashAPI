@@ -9,6 +9,14 @@ import UIKit
 
 class BaseViewController: UIViewController {
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setActions()
+    }
+    
+    func setActions() { }
+    
     deinit {
         print("🙂🙂🙂🙂 deinit 🙂🙂🙂🙂")
     }

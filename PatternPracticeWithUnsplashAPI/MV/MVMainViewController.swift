@@ -30,12 +30,7 @@ final class MVMainViewController: BaseViewController {
         setUIConfigAndDesign()
         
         // 4. 비즈니스 로직
-        //  4-1. Unsplash API 요청하기
         requestRandomImageInUnsplash()
-        //  4-2. API로 받아온 데이터 담을 구조 만들기
-        //  4-3. 구조에 담기
-        //  4-4. 데이터 뷰에 업데이트해주기
-        //  4-5. 액션 처리하기
     }
     
     private func setUIConfigAndDesign() {
