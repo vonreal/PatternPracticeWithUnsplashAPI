@@ -11,13 +11,13 @@
     - 이미지 보여주기 (📚 기존 - KingFisher 사용, 없이 처리하는 법 공부)
     - 버튼 눌렀을 때 액션 처리하기 (랜덤 이미지 다시 가져와서 보여주기)
  
-    📱 뷰: 레이아웃, UI 객체 배치
-    🏃‍♀️ 뷰컨: 모델 및 비즈니스 로직 처리
+    📱 스토리보드 뷰: 레이아웃, UI 객체 배치
+    🏃‍♀️ 뷰컨: 데이터 및 비즈니스 로직 처리
  */
 
 import UIKit
 
-final class VCMainViewController: BaseViewController {
+final class MVMainViewController: BaseViewController {
 
     // 1. Outlet 연결
     @IBOutlet weak var photoImageView: UIImageView!
