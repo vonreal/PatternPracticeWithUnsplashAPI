@@ -112,6 +112,7 @@
 		76FC1D61290ADBEC00DD8E94 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
+				76FC1D9029113D5B00DD8E94 /* Models */,
 				76FC1D7A290FFB0200DD8E94 /* Controllers */,
 				76FC1D78290FF85300DD8E94 /* Services */,
 				76FC1D79290FF85900DD8E94 /* View */,
@@ -148,7 +149,6 @@
 				76FC1D8D29101AD100DD8E94 /* Extension */,
 				76FC1D70290C049600DD8E94 /* APIkey.swift */,
 				76FC1D7F290FFE1000DD8E94 /* AppStrings.swift */,
-				76FC1D72290C10EA00DD8E94 /* RandomImage.swift */,
 				76FC1D8A29100A6300DD8E94 /* Base */,
 				76FC1D81290FFE5500DD8E94 /* Design+Extension */,
 			);
@@ -203,6 +203,14 @@
 				76FC1D8E29101AFB00DD8E94 /* UIImageView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		76FC1D9029113D5B00DD8E94 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1D72290C10EA00DD8E94 /* RandomImage.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
