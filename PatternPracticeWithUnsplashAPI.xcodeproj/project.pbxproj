@@ -27,6 +27,9 @@
 		76FC1D892910064C00DD8E94 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D882910064C00DD8E94 /* MVCViewController.swift */; };
 		76FC1D8C29100D7300DD8E94 /* UnsplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D8B29100D7300DD8E94 /* UnsplashService.swift */; };
 		76FC1D8F29101AFB00DD8E94 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D8E29101AFB00DD8E94 /* UIImageView+Extension.swift */; };
+		76FC1D9829114E3800DD8E94 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D9729114E3800DD8E94 /* Box.swift */; };
+		76FC1D9A29114F3F00DD8E94 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D9929114F3F00DD8E94 /* MVVMViewModel.swift */; };
+		76FC1D9D29114F5D00DD8E94 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D9C29114F5D00DD8E94 /* MVVMViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		76FC1D882910064C00DD8E94 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
 		76FC1D8B29100D7300DD8E94 /* UnsplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashService.swift; sourceTree = "<group>"; };
 		76FC1D8E29101AFB00DD8E94 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		76FC1D9729114E3800DD8E94 /* Box.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Box.swift; sourceTree = "<group>"; };
+		76FC1D9929114F3F00DD8E94 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
+		76FC1D9C29114F5D00DD8E94 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,9 @@
 		76FC1D62290ADC0400DD8E94 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				76FC1D9B29114F4800DD8E94 /* View */,
+				76FC1D9629114E2900DD8E94 /* Utilities */,
+				76FC1D9529114E1C00DD8E94 /* View Models */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -213,6 +222,30 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		76FC1D9529114E1C00DD8E94 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1D9929114F3F00DD8E94 /* MVVMViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		76FC1D9629114E2900DD8E94 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1D9729114E3800DD8E94 /* Box.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		76FC1D9B29114F4800DD8E94 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				76FC1D9C29114F5D00DD8E94 /* MVVMViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,11 +332,14 @@
 				76FC1D83290FFE6B00DD8E94 /* UIButton+DesignExtension.swift in Sources */,
 				76FC1D51290AD42B00DD8E94 /* ViewController.swift in Sources */,
 				76FC1D4D290AD42B00DD8E94 /* AppDelegate.swift in Sources */,
+				76FC1D9A29114F3F00DD8E94 /* MVVMViewModel.swift in Sources */,
 				76FC1D85290FFF2800DD8E94 /* UIImageView+DesignExtension.swift in Sources */,
 				76FC1D71290C049600DD8E94 /* APIkey.swift in Sources */,
 				76FC1D7E290FFBD300DD8E94 /* BaseView.swift in Sources */,
 				76FC1D73290C10EA00DD8E94 /* RandomImage.swift in Sources */,
+				76FC1D9D29114F5D00DD8E94 /* MVVMViewController.swift in Sources */,
 				76FC1D80290FFE1000DD8E94 /* AppStrings.swift in Sources */,
+				76FC1D9829114E3800DD8E94 /* Box.swift in Sources */,
 				76FC1D4F290AD42B00DD8E94 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

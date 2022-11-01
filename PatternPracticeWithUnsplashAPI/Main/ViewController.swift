@@ -26,6 +26,8 @@ final class ViewController: BaseViewController {
     }
     
     @IBAction func mvvmButtonClicked(_ sender: UIButton) {
+        let viewController = MVVMViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func mvvmRxswiftButtonClicked(_ sender: UIButton) {
