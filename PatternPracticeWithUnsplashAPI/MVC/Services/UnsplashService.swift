@@ -8,14 +8,13 @@
 import UIKit
 
 enum APIError: Error {
-    case invalidURL
     case invalidResponse
     case noData
     case failedRequest
     case invalidData
 }
 
-struct APIManager {
+struct UnsplashService {
     private init() { }
     
     static func getUnsplashURL() -> URL? {

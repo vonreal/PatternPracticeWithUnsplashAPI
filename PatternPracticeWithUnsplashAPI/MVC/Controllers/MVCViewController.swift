@@ -37,8 +37,8 @@ final class MVCViewController: BaseViewController {
     
     // MARK: - functions
     private func updateImage() {
-        let url = APIManager.getUnsplashURL()!
-        APIManager.request(url: url) { result, error in
+        let url = UnsplashService.getUnsplashURL()!
+        UnsplashService.request(url: url) { result, error in
             let imageURLString = result?[0].urls.small
             if let imageURL = URL(string: imageURLString!) {
                 self.mainView.imageView.load(url: imageURL)

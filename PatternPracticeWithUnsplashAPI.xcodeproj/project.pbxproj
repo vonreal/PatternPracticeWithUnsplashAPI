@@ -25,7 +25,7 @@
 		76FC1D83290FFE6B00DD8E94 /* UIButton+DesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D82290FFE6B00DD8E94 /* UIButton+DesignExtension.swift */; };
 		76FC1D85290FFF2800DD8E94 /* UIImageView+DesignExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D84290FFF2800DD8E94 /* UIImageView+DesignExtension.swift */; };
 		76FC1D892910064C00DD8E94 /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D882910064C00DD8E94 /* MVCViewController.swift */; };
-		76FC1D8C29100D7300DD8E94 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D8B29100D7300DD8E94 /* APIManager.swift */; };
+		76FC1D8C29100D7300DD8E94 /* UnsplashService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D8B29100D7300DD8E94 /* UnsplashService.swift */; };
 		76FC1D8F29101AFB00DD8E94 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76FC1D8E29101AFB00DD8E94 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,7 +50,7 @@
 		76FC1D82290FFE6B00DD8E94 /* UIButton+DesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+DesignExtension.swift"; sourceTree = "<group>"; };
 		76FC1D84290FFF2800DD8E94 /* UIImageView+DesignExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DesignExtension.swift"; sourceTree = "<group>"; };
 		76FC1D882910064C00DD8E94 /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
-		76FC1D8B29100D7300DD8E94 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		76FC1D8B29100D7300DD8E94 /* UnsplashService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashService.swift; sourceTree = "<group>"; };
 		76FC1D8E29101AFB00DD8E94 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -112,8 +112,8 @@
 		76FC1D61290ADBEC00DD8E94 /* MVC */ = {
 			isa = PBXGroup;
 			children = (
-				76FC1D7A290FFB0200DD8E94 /* Controller */,
-				76FC1D78290FF85300DD8E94 /* Model */,
+				76FC1D7A290FFB0200DD8E94 /* Controllers */,
+				76FC1D78290FF85300DD8E94 /* Services */,
 				76FC1D79290FF85900DD8E94 /* View */,
 			);
 			path = MVC;
@@ -155,12 +155,12 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
-		76FC1D78290FF85300DD8E94 /* Model */ = {
+		76FC1D78290FF85300DD8E94 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				76FC1D8B29100D7300DD8E94 /* APIManager.swift */,
+				76FC1D8B29100D7300DD8E94 /* UnsplashService.swift */,
 			);
-			path = Model;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		76FC1D79290FF85900DD8E94 /* View */ = {
@@ -171,12 +171,12 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		76FC1D7A290FFB0200DD8E94 /* Controller */ = {
+		76FC1D7A290FFB0200DD8E94 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
 				76FC1D882910064C00DD8E94 /* MVCViewController.swift */,
 			);
-			path = Controller;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		76FC1D81290FFE5500DD8E94 /* Design+Extension */ = {
@@ -287,7 +287,7 @@
 				76FC1D7C290FFBBA00DD8E94 /* MVCView.swift in Sources */,
 				76FC1D892910064C00DD8E94 /* MVCViewController.swift in Sources */,
 				76FC1D65290BEB8400DD8E94 /* MVMainViewController.swift in Sources */,
-				76FC1D8C29100D7300DD8E94 /* APIManager.swift in Sources */,
+				76FC1D8C29100D7300DD8E94 /* UnsplashService.swift in Sources */,
 				76FC1D83290FFE6B00DD8E94 /* UIButton+DesignExtension.swift in Sources */,
 				76FC1D51290AD42B00DD8E94 /* ViewController.swift in Sources */,
 				76FC1D4D290AD42B00DD8E94 /* AppDelegate.swift in Sources */,
